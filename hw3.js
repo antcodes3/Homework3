@@ -44,7 +44,7 @@ function validateFname() {
     
 //Validating Middle Initial \
 function validateMname() {
-    let name = document.getElementById("mname").value;
+    let mname = document.getElementById("mname").value;
     const namePattern = /^[A-Za-z]$/; 
     //makes middle inital uppercase
     mname = mname.toUpperCase();
@@ -112,12 +112,12 @@ function validateSsn() {
     // Register Expression for SSN pattern
     const ssnR = /^[0-9]{3}-?[0-9]{2}-?[0-9]{4}$/;
 
-    if (!ssn.test(ssn) ) {
+    if (!ssnR.test(ssn) ) {
         document.getElementById("ssn-error").innerHTML =
         "Please enter a valid Social Security Number.";
         return false;
     } else {
-        document.getElementById("ssn-errir").innerHTML = "";
+        document.getElementById("ssn-error").innerHTML = "";
         return true;
     }
 }
