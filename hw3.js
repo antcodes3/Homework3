@@ -59,7 +59,7 @@ function validateMname() {
 }
 
 //vallidating Last name
-function validation() {
+function validationLanme() {
     lname = document.getElementById("lname").value.trim();
     var namePattern = /^[a-zA-Z' -]+$/;
     // checks if last name field is empty
@@ -84,7 +84,7 @@ function validation() {
 }
 
 // Js code for validating Date of Birth
-function validateDOB() {
+function validateDob() {
     dob = document.getElementById("dob").value;
     let date = new Date(dob.value);
     let maxDate = new Date().setFullYear(new Date().getFullYear() - 120);
@@ -106,7 +106,7 @@ function validateDOB() {
 }
 
 // Js code for validating SSN
-function validateSSN() {
+function validateSsn() {
     const ssn = document.getElementById("ssn").value;
 
     // Register Expression for SSN pattern
@@ -123,7 +123,7 @@ function validateSSN() {
 }
 
 // Js code for validating Address 1
-function validateAddress() {
+function validateAddress1() {
     var ad1 = document.getElementById("address1").value;
     console.log(ad1);
     console.log(ad1.length);
