@@ -382,7 +382,7 @@ function validateEverything() {
     if (!validateDob()) {
         valid = false;
     }
-    if (!validateSSN()) {
+    if (!validateSsn()) {
         valid = false;
     }
     if (!validateAddress1()) {
