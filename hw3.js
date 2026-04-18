@@ -357,13 +357,13 @@ document.getElementById("showInput").innerHTML = "";
 
 //show alert box when needed
 function showAlert() {
-    var alertbox = document.getElementById("alert-box");
+    var alertBox = document.getElementById("alert-box");
     var closeAlert = document.getElementById("close-alert");
 
-    alertbox.style.display = "block";
+    alertBox.style.display = "block";
     closeAlert.onclick = function() {
-        alertbox.style.display = "none";
-    }
+        alertBox.style.display = "none";
+    };
 }
 
 // validate all the stuff one the form
