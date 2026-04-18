@@ -86,7 +86,7 @@ function validateLname() {
 // Js code for validating Date of Birth
 function validateDob() {
     dob = document.getElementById("dob").value;
-    let date = new Date(dob.value);
+    let date = new Date(dob);
     let maxDate = new Date().setFullYear(new Date().getFullYear() - 120);
 
     if (date > new Date()) {
@@ -284,7 +284,7 @@ function validatePass() {
 //js for confirm password validation js code
 function confirmPass() {
     pass1 = document.getElementById("pass").value;
-    pass2 = document.getElementById("pass2").value;
+    pass2 = document.getElementById("c_pass").value;
 
     if (pass1 !== pass2){
         document.getElementById("pass2-error-msg").innerHTML =
