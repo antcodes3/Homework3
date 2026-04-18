@@ -287,11 +287,11 @@ function confirmPass() {
     pass2 = document.getElementById("pass2").value;
 
     if (pass1 !== pass2){
-        document.getElementById("pass2-error").innerHTML =
+        document.getElementById("pass2-error-msg").innerHTML =
         "Passwords do not match.";
         return false;
     } else {
-        document.getElementById("pass2-error").innerHTML = 
+        document.getElementById("pass2-error-msg").innerHTML = 
         "Pathwords match.";
         return true;
     }
