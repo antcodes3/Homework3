@@ -59,7 +59,7 @@ function validateMname() {
 }
 
 //vallidating Last name
-function validateLanme() {
+function validateLname() {
     lname = document.getElementById("lname").value.trim();
     var namePattern = /^[a-zA-Z' -]+$/;
     // checks if last name field is empty
