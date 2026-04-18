@@ -2,7 +2,7 @@
     NAME: Anthony Newsome
     Date created:
     Date Modified:
-    Purpose: Homework 1 
+    Purpose: Homework 3 
 */
 
 //dynamic date js code
@@ -355,3 +355,64 @@ function removeReview() {
 document.getElementById("showInput").innerHTML = "";
 }
 
+//show alert box when needed
+function showAlert() {
+    var alertbox = document.getElementById("alert-box");
+    var closeAlert = document.getElementById("close-alert");
+
+    alertbox.style.display = "block";
+    closeAlert.onclick = function() {
+        alertbox.style.display = "none";
+    }
+}
+
+// validate all the stuff one the form
+function validateEverything() {
+    let valid = true;
+
+    if (!validateFname()) {
+        valid = false;
+    }
+    if (!validateMname()) {
+        valid = false;
+    }
+    if (!validateLname()) {
+        valid = false;
+    }
+    if (!validateDob()) {
+        valid = false;
+    }
+    if (!validateSSN()) {
+        valid = false;
+    }
+    if (!validateAddress1()) {
+        valid = false;
+    }
+    if (!validateCity()) {
+        valid = false;
+    }
+    if (!validateZcode()) {
+        valid = false;
+    }
+    if (!validateEmail()) {
+        valid = false;
+    }
+    if (!validatePhonenum()) {
+        valid = false;
+    }
+    if (!validateUsername()) {
+        valid = false;
+    }
+    if (!validatePass()) {
+        valid = false;
+    }
+    if (!confirmPass()) {
+        valid = false;
+    }
+    if (valid) {
+        document.getElementById("submit").disabled = false;
+    } else{
+        showAlert();
+    }
+}
+     
